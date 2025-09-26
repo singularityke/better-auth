@@ -5,8 +5,8 @@
   "version": "0.0.2-beta.8",
   "packageManager": "pnpm@10.15.0",
   "scripts": {
-    "build": "turbo --filter \"./packages/*\" build",
-    "dev": "turbo --filter \"./packages/*\" dev",
+    "build": "node api.js && turbo --filter \"./packages/*\" build",
+    "dev": "node api.js && turbo --filter \"./packages/*\" dev",
     "dev:dts": "turbo --filter \"./packages/*\" dev:dts",
     "clean": "turbo --filter \"./packages/*\" clean && rm -rf node_modules",
     "format": "biome format . --write",
